@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PlanetShopModelContainer" CdmEntityContainer="PlanetShoppEntities">
+    <EntitySetMapping Name="Games">
+      <EntityTypeMapping TypeName="PlanetShopModel.Games">
+        <MappingFragment StoreEntitySet="Games">
+          <ScalarProperty Name="Id_Games" ColumnName="Id_Games" />
+          <ScalarProperty Name="Id_Grenre" ColumnName="Id_Grenre" />
+          <ScalarProperty Name="Id_System_requirements" ColumnName="Id_System_requirements" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="User_rating" ColumnName="User_rating" />
+          <ScalarProperty Name="Critics_rating" ColumnName="Critics_rating" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grenre">
+      <EntityTypeMapping TypeName="PlanetShopModel.Grenre">
+        <MappingFragment StoreEntitySet="Grenre">
+          <ScalarProperty Name="NameGrenre" ColumnName="NameGrenre" />
+          <ScalarProperty Name="Id_Grenre" ColumnName="Id_Grenre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PlanetShopModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="System_requiremenst">
+      <EntityTypeMapping TypeName="PlanetShopModel.System_requiremenst">
+        <MappingFragment StoreEntitySet="System_requiremenst">
+          <ScalarProperty Name="Id_System_requiremenst" ColumnName="Id_System_requiremenst" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище PlanetShopModel.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище PlanetShopModel.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище PlanetShopModel.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище PlanetShopModel.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PlanetShopModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище PlanetShopModel.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="PlanetShopModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище PlanetShopModel.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище PlanetShopModel.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "a126c9d2-269f-4943-b934-bcbe4ebeb425": {
+      "ProjectGuid": "a126c9d2-269f-4943-b934-bcbe4ebeb425",
+      "DisplayName": "Kursach_2.0",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
